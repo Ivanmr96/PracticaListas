@@ -60,20 +60,43 @@ public class Order {
 	
 	//M√©todos a completar
 	//PRIMERA PARTE
+	
+	/* INTERFAZ
+	 * Comentario: AÒade una linea de pedido de la lista
+	 * Prototipo: public void addOrderLine(OrderLine orderLine)
+	 * Entrada: Un OrderLine que representa la linea de pedido a aÒadir
+	 * Precondiciones: No hay
+	 * Salida: No hay
+	 * Postcondiciones: Se aÒade una linea de pedido
+	 */
 	public void addOrderLine(OrderLine orderLine) {
-		//TODO A√±adir art√≠culo
-		
+		orderLines.add(orderLine);
 	}
 	
+	/* INTERFAZ
+	 * Comentario: Borra una linea de pedido de la lista
+	 * Prototipo: public void removeOrderLine(OrderLine orderLine) 
+	 * Entrada: Un OrderLine que ser· la linea de pedido que se borrar·
+	 * Precondiciones: No hay
+	 * Salida: No hay
+	 * Postcondiciones: Borra la linea de pedido especificada, si la misma
+	 * 					lista de pedido est· repetida, borra la primera ocurrencia.
+	 * 					Si la linea de pedido no existe en la lista, no borra ninguna.
+	 */
 	public void removeOrderLine(OrderLine orderLine) {
-		//TODO Eliminar art√≠culo
-		
+		orderLines.remove(orderLine);
 	}
 	
+	/* INTERFAZ
+	 * Comentario: Obtiene una linea de pedido de la lista
+	 * Prototipo: public OrderLine getOrderLine(int position)
+	 * Entrada: la posicion en la que se encuentra la linea de pedido dentro de la lista
+	 * Precondiciones: La posicion debe ser una posicion existente.
+	 * Salida: un OrderLine con la linea de pedido
+	 * Postcondiciones: Asociado al nombre devuelve un objeto OrderLine con la linea de pedido.
+	 */
 	public OrderLine getOrderLine(int position) {
-		//TODO Coger art√≠culo
-		
-		return null;
+		return orderLines.get(position);
 	}
 	
 	//SEGUNDA PARTE

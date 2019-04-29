@@ -68,36 +68,40 @@ public class Supermarket {
 	
 	//MÃ©todos a completar
 	//PRIMERA PARTE
+	
+	/* INTERFAZ
+	 * Comentario: Añade un producto a la lista de productos
+	 * Prototipo: public void addProduct(Product product)
+	 * Entrada: Un Product a añadir
+	 * Precondiciones: No hay
+	 * Salida: No hay
+	 * Postcondiciones: Añade un producto a la lista de productos
+	 */
 	public void addProduct(Product product) {
-		//TODO AÃ±adir producto
-		
+		products.add(product);
 	}
 	
+	/* INTERFAZ
+	 * 
+	 */
 	public void removeProduct(Product product) {
-		//TODO Eliminar producto
-		
+		products.remove(product);
 	}
 	
 	public Product getProduct(int position) {
-		//TODO Obtener producto
-		
-		return null;
+		return products.get(position);
 	}
 	
 	public void addOrder(Order order) {
-		//TODO AÃ±adir pedido
-		
+		orders.add(order);
 	}
 	
 	public void removeOrder(Order order) {
-		//TODO Eliminar pedido
-		
+		orders.remove(order);
 	}
 	
 	public Order getOrder(int position) {
-		//TODO Obtener pedido
-		
-		return null;
+		return orders.get(position);
 	}
 	
 	//TERCERA PARTE
