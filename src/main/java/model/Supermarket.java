@@ -82,24 +82,61 @@ public class Supermarket {
 	}
 	
 	/* INTERFAZ
-	 * 
+	 * Comentario: Borra un producto de la lista de productos
+	 * Prototipo: public void removeProduct(Product product)
+	 * Entrada: Un Product a borrar
+	 * Precondiciones: No hay
+	 * Salida: No hay
+	 * Postcondiciones: Borrar el producto determinado de la lista, si el producto no se encuentra en la lista, no hace nada.
 	 */
 	public void removeProduct(Product product) {
 		products.remove(product);
 	}
 	
+	/* INTERFAZ
+	 * Comentario: Obtiene un producto dada una posicion de la lista
+	 * Prototipo: public Product getProduct(int position)
+	 * Entrada: Un int con la posicion del producto
+	 * Precondiciones: La posicion a buscar debe existir
+	 * Salida: el Product de la posicion determinada
+	 * Postcondiciones: Asociado al nombre devuelve el producto de la posicion determinada.
+	 */
 	public Product getProduct(int position) {
 		return products.get(position);
 	}
 	
+	/* INTERFAZ
+	 * Comentario: Añade un pedido (order) a la lista de pedidos
+	 * Prototipo: public void addOrder(Order order)
+	 * Entrada: Un Order con el pedido a añadir
+	 * Precondiciones: No hay
+	 * Salida: No hay
+	 * Postcondiciones: El Order determinado queda añadido en la lista
+	 */
 	public void addOrder(Order order) {
 		orders.add(order);
 	}
 	
+	/* INTERFAZ
+	 * Comentario: Borra un pedido de la lista de pedidos
+	 * Prototipo: public void removeOrder(Order order)
+	 * Entrada: El Order a borrar de la lista de pedidos
+	 * Precondiciones: No hay
+	 * Salida: No hay
+	 * Postcondiciones: Borra el pedido determinado de la lista, si el pedido no existe, no borra nada.
+	 */
 	public void removeOrder(Order order) {
 		orders.remove(order);
 	}
 	
+	/* INTERFAZ
+	 * Comenario: Obtiene un pedido de la lista de pedidos dada una posicion
+	 * Prototipo: public Order getOrder(int position)
+	 * Entrada: Un int con la posicion del pedido a obtener
+	 * Precondiciones: La posicion debe existir en la lista
+	 * Salida: el Order de la posicion determinada
+	 * Postcondiciones: Asociado al nombre devuelve el Order de la posición determinada
+	 */
 	public Order getOrder(int position) {
 		return orders.get(position);
 	}
